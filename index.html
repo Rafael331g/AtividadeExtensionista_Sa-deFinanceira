@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaúdeFinanceira | Controle de gastos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>SaúdeFinanceira</h1>
+<p>Controle de gastos e organização financeira pessoal</p>
+</header>
+
+<main>
+<section class="container">
+
+<section class="formulario">
+
+<h2>Informe seus dados financeiros</h2>
+
+<label>Renda mensal
+<input type="number" id="renda" placeholder="R$ 0,00">
+</label>
+
+<label>Moradia
+<input type="number" id="moradia" placeholder="R$ 0,00">
+</label>
+
+<label>Alimentação
+<input type="number" id="alimentacao" placeholder="R$ 0,00">
+</label>
+
+<label>Transporte
+<input type="number" id="transporte" placeholder="R$ 0,00">
+</label>
+
+<label>Contas básicas
+<input type="number" id="contas" placeholder="R$ 0,00">
+</label>
+
+<label>Lazer
+<input type="number" id="lazer" placeholder="R$ 0,00">
+</label>
+
+<label>Outros gastos
+<input type="number" id="outros" placeholder="R$ 0,00">
+</label>
+
+<button onclick="calcular()">Calcular situação financeira</button>
+
+</section>
+
+
+<section class="resultado">
+
+<h2>Resultado</h2>
+
+<div class="informacao">
+<p>Total de despesas</p>
+<strong id="total">R$ 0,00</strong>
+</div>
+
+<div class="informacao">
+<p>Saldo disponível</p>
+<strong id="saldo">R$ 0,00</strong>
+</div>
+
+<div class="informacao">
+<p>Análise financeira</p>
+<strong id="status">Aguardando análise</strong>
+</div>
+
+<div class="dica">
+<p id="mensagem">Preencha os dados para receber uma análise.</p>
+</div>
+
+</section>
+
+</section>
+</main>
+
+
+<footer>
+<p>Projeto social SaúdeFinanceira © 2026</p>
+<p>Desenvolvido por Rafael Gomes</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
